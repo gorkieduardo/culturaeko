@@ -1,0 +1,180 @@
+/*
+Theme Name: CULTURAEKO
+Theme URI:
+Author: Eduardo Estrada Montenegro
+Version: 1.1
+Licencia
+Tags: Cultura, Economía
+Text Domian: http://culturaeko.com
+*/
+
+
+body {
+    background-color: #f8f8f8;
+}
+
+.encabezado {
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    line-height: 2.4rem;
+
+}
+.encabezado span {
+    font-size: 3.8rem;
+    font-family: 'Italianno', cursive;
+    color: #e082a8;
+
+}
+
+.imagen-fondo {
+   color: #FFFFFF!important;
+}
+
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    /*cambiar color redes sociales*/
+    color: #181735;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+/** NAVEGACION **/
+.navegacion {
+     background-color: #316f88;
+}
+.navbar-light .navbar-toggler{
+     background-color: #ffffff;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+     color: #ffffff;
+}
+
+.nav-principal {
+     background-image: url(img/border_horizontal.png),
+                        url(img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+
+
+.nav-link {
+     color: #ffffff;
+     font-size: 1.0rem;
+    transition: all .5s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-link:hover {
+     background-color: #bde8dd;
+     color: #000000;
+}
+
+/*Social Share*/
+
+.dc-link:hover,.dc-link:active {
+   color: white;
+}
+
+.dc-twitter {
+   background: #00aced;
+}
+
+.dc-twitter:hover,.dc-twitter:active {
+   background: #0084b4;
+}
+
+.dc-facebook {
+   background: #3B5997;
+}
+
+.dc-facebook:hover,.dc-facebook:active {
+   background: #2d4372;
+}
+
+.dc-googleplus {
+   background: #D64937;
+}
+
+.dc-googleplus:hover,.dc-googleplus:active {
+   background: #b53525;
+}
+
+
+.dc-whatsapp {
+   background: #43d854;
+}
+
+.dc-whatsapp:hover,.dc-whatsapp:active {
+   background: #009688;
+}
+
+.dc-linkedin {
+   background: #0074A1;
+}
+
+.dc-linkedin:hover,.dc-linkedin:active {
+   background: #006288;
+}
+
+.dc-social {
+   font-family: Helvetica;
+   font-size:1.2rem;
+   margin-bottom: 20px;
+   text-align: center;
+}   
+
+.dc-social .dc-link {
+   color: white!important;
+   font-size: 1.2rem;
+   padding: 10px 15px;
+   border-radius: 2px;
+   margin-right: 2px;
+   margin-top: 2px;
+   cursor: pointer;
+   display: inline-block;
+}
+
+.dc-social i{
+   font-size: 1.1rem;
+}
+
+.dc-social p{
+   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+   .dc-whatsapp {
+       display: none!important;
+   }
+}
